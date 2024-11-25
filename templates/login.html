@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Hey User This is Login Page</h1>
+    {{form.non_field_errors}}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Login Account</button>
+    </form>
+</body>
+</html>
